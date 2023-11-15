@@ -6,29 +6,19 @@
     <link rel="stylesheet" href="../static/home.css" />
   </head>
   <body>
-    <div
-      aria-label="Orange and tan hamster running in a metal wheel"
-      role="img"
-      class="wheel-and-hamster"
-    >
-      <div class="wheel"></div>
-      <div class="hamster">
-        <div class="hamster__body">
-          <div class="hamster__head">
-            <div class="hamster__ear"></div>
-            <div class="hamster__eye"></div>
-            <div class="hamster__nose"></div>
-          </div>
-          <div class="hamster__limb hamster__limb--fr"></div>
-          <div class="hamster__limb hamster__limb--fl"></div>
-          <div class="hamster__limb hamster__limb--br"></div>
-          <div class="hamster__limb hamster__limb--bl"></div>
-          <div class="hamster__tail"></div>
-        </div>
-      </div>
-      <div class="spoke"></div>
+    <div id="loader" style="display:none" class="loader3">
+      <div class="circle1"></div>
+      <div class="circle1"></div>
+      <div class="circle1"></div>
+      <div class="circle1"></div>
+      <div class="circle1"></div>
     </div>
-    <form class="form-container" method="post">
+    
+
+
+<h1>Rainfall pH Detection</h1>
+
+    <form class="form-container" method="post"id="myForm">
       <div class="input-container">
         <input
           type="number"
@@ -38,7 +28,7 @@
         />
         <div class="highlight"></div>
       </div>
-      <button>
+      <button onclick="showLoader()">
         Submit
         <div class="star-1">
           <svg
@@ -195,6 +185,19 @@
 
     <div class="ph">
       <h2>{{inp }}</h2>
+      <h2>{{advice }}</h2>
     </div>
+
+   
+    <script>
+      function showLoader() {
+  document.getElementById('loader').style.display = 'flex'; // Display the loader when the button is clicked
+
+  setTimeout(function () {
+    document.getElementById('loader').style.display = 'none'; // Hide the loader after 5 seconds
+  }, 10000);
+}
+
+    </script>
   </body>
 </html>
