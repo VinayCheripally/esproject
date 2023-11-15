@@ -6,7 +6,7 @@ app = Flask(__name__)
 def pred():
 
     x= 0
-    if 'text' in request.form and request.method=='POST':
+    if request.method=='POST' and 'text' in request.form :
         x = 7
     return render_template('home.html',inp = x)
 
