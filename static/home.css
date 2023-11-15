@@ -227,6 +227,13 @@ body {
   gap: 10px;
   padding-right: 1.2rem; /* Adjust the spacing between input and button */
 }
-h3 {
+
+.ph {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+h2 {
   color: white;
 }
