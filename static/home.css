@@ -10,8 +10,10 @@
     background-color: #f8f8f8;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    max-width: 200px;
+    
     color: #333;
+    width:250px;
+    height:30px;
   }
   
   .input:hover {
@@ -39,7 +41,7 @@
   }
   
   .input:focus + .highlight {
-    width: 100%;
+    width: calc(100% - 2em); /* Adjusted width to match the input width minus padding */
   }
   
   /* Optional: Animation on focus */
@@ -205,4 +207,21 @@
   
   .fil0 {
     fill: #FFFDEF
+  }
+
+  body{
+    background-color:black;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top:3rem;
+    justify-content: center;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px;
+    padding-right:1.2rem; /* Adjust the spacing between input and button */
   }
