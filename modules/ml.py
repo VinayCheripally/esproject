@@ -7,7 +7,7 @@ from sklearn.svm import SVR
 
 
 class ml:
-    def runQuery(x):
+    def runQuery(self,x):
         df=pd.read_csv('water_potability.csv')
         df = df[(df["ph"] > 4.0) & (df["ph"] < 6.5)]
         df.reset_index(drop=True, inplace=True)
@@ -35,5 +35,4 @@ class ml:
 
         X_lately = X[-x:]
         forecast_set = clf.predict(X_lately)
-
         return forecast_set[x-1]

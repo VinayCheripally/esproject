@@ -6,6 +6,28 @@
     <link rel="stylesheet" href="../static/home.css" />
   </head>
   <body>
+    <div
+      aria-label="Orange and tan hamster running in a metal wheel"
+      role="img"
+      class="wheel-and-hamster"
+    >
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
+          </div>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
+    </div>
     <form class="form-container" method="post">
       <div class="input-container">
         <input
@@ -16,7 +38,7 @@
         />
         <div class="highlight"></div>
       </div>
-      <button type="button">
+      <button>
         Submit
         <div class="star-1">
           <svg
@@ -172,7 +194,8 @@
     </form>
 
     <div class="ph">
-      <h2>{{inp }}</h2>
+      <h2>{{ inp }}</h2>
+      <h2>{{ advice }}</h2>
     </div>
   </body>
 </html>
