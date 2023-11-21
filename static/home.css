@@ -225,7 +225,7 @@ body {
 .input-container {
   display: flex;
   gap: 10px;
-  padding-right: 1.2rem; /* Adjust the spacing between input and button */
+  padding-right: 1.2rem; 
 }
 
 .ph {
@@ -238,22 +238,22 @@ body {
 
 h2 {
   color: white;
-  margin-bottom: 10px; /* Add some margin between the two h2 elements */
+  margin-bottom: 10px; 
 }
 
 
 
 .loader3 {
   display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  position: fixed; /* Fixed position for centering */
+  justify-content: center; 
+  align-items: center; 
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 9999; /* Ensure it's on top of other elements */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9999; 
 }
 
 .circle1 {
@@ -305,7 +305,7 @@ h1{
 
 body {
   background-image: url('https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?cs=srgb&dl=pexels-francesco-ungaro-396547.jpg&fm=jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-  background-size: cover; /* Ensures the image covers the entire body */
-  background-position: center; /* Centers the image within the body */
-  /* Optionally, you can add other background properties like background-repeat, etc. */
+  background-size: cover; 
+  background-position: center; 
+ 
 }
