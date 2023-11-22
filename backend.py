@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect
 from modules.ml import ml
 app = Flask(__name__)
 
@@ -23,6 +23,9 @@ def pred():
 
 @app.route("/",methods=['GET','POST'])
 def loc():
+    if request.method=='POST' and 'location' in request.form:
+        print(request.form["location"])
+        return redirect("/phDetection")
     return render_template("loc.html")
 
 
