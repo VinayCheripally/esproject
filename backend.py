@@ -21,6 +21,12 @@ def pred():
             adv = "Strongly alkaline. Consider measures to reduce alkalinity."
     return render_template('home.html',inp = x,advice = adv)
 
+@app.route("/",methods=['GET','POST'])
+def loc():
+    return render_template("loc.html")
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
