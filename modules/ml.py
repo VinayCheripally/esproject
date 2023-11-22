@@ -31,4 +31,4 @@ class ml:
 
         X_lately = X_scaled[-forecast_out:]
         forecast_set = clf.predict(X_lately)
-        print(f"Forecasted pH value at index 3: {forecast_set[3]}")
+        return forecast_set[x-1]

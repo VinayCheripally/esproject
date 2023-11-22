@@ -5,7 +5,7 @@ app.secret_key = 'hello'
 @app.route('/phDetection',methods=['GET','POST'])
 def pred():
     adv = ''
-    x= "Please specify the number of days for predicting rainfall's pH"
+    x= "Please specify the number of days for predicting rainfall's pH"+" District "+str(session["location"])
     if request.method=='POST' and 'text' in request.form:
         value = request.form["text"]
         value = int(value)
@@ -19,7 +19,7 @@ def pred():
             adv = "Slightly alkaline. Monitor and manage alkalinity levels."
         elif 8.5 <= x:
             adv = "Strongly alkaline. Consider measures to reduce alkalinity."
-    return render_template('home.html',inp = x+" District "+str(session["location"]),advice = adv)
+    return render_template('home.html',inp = x,advice = adv)
 
 @app.route("/",methods=['GET','POST'])
 def loc():
