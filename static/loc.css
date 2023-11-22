@@ -3,22 +3,35 @@ body {
   background-size: 100% 100%;
   background-position: center;
 }
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-/* Center the dropdown */
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    color:white; 
+    margin-bottom: 0!important;
+    
+  }
+
+ 
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
 .dropdown-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust if needed */
+  
+  overflow:hidden;
+  padding:0!important;
+  margin:0!important;
+  height: calc(100vh - 250px);
 }
 
-/* Style the dropdown button */
+
 .dropbtn {
   padding: 12px;
   font-size: 16px;
@@ -28,7 +41,7 @@ body {
   width: 300px;
 }
 
-/* Style the dropdown button on hover */
+
 .dropbtn:hover {
   background-color: #f1f1f1;
 }
