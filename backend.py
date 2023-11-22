@@ -19,7 +19,7 @@ def pred():
             adv = "Slightly alkaline. Monitor and manage alkalinity levels."
         elif 8.5 <= x:
             adv = "Strongly alkaline. Consider measures to reduce alkalinity."
-    return render_template('home.html',inp = x+"district "+str(session["location"]),advice = adv)
+    return render_template('home.html',inp = x+" District "+str(session["location"]),advice = adv)
 
 @app.route("/",methods=['GET','POST'])
 def loc():
